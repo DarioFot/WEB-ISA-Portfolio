@@ -1,0 +1,70 @@
+/* Global */
+
+/* Schrift importieren */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: larger;
+}
+
+/* bei Navigation nicht direkt zu den Elementen springen*/
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: gray;
+}
+
+/* Übergang */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* Desktop NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center; /* vh= ViewHight 100 = 100% des Screens */
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none; /* Bulletpoints entfernen */
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem; /* Abstand der Linie zum Text */
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default; /* Bei Hover über Logo keine Veränderung */
+}
