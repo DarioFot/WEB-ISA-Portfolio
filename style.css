@@ -15,6 +15,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 /* bei Navigation nicht direkt zu den Elementen springen*/
@@ -293,4 +294,17 @@ h1 {
 
 .btn-container {
   gap: 1rem;
+}
+
+/* ABOUT */
+
+.section_picture-container_about {
+  display: flex;
+  height: 350px;
+  width: 350px;
+  margin: auto 0;
+}
+.titel__h2 {
+  color: black;
+  text-align: center;
 }
