@@ -25,6 +25,7 @@ html {
 
 p {
   color: gray;
+  font-size: 1rem;
 }
 
 /* Übergang */
@@ -186,19 +187,6 @@ section {
   height: 450px;
   width: 450px;
   margin: auto 0;
-  animation: rotateOnLoad 1s ease-in-out forwards;
-}
-
-@keyframes rotateOnLoad {
-  from {
-    transform: rotate(-10deg) scale(0.95);
-  }
-  50% {
-    transform: rotate(5deg) scale(1.05);
-  }
-  to {
-    transform: rotate(0deg) scale(1);
-  }
 }
 
 .section__text {
@@ -227,7 +215,10 @@ section {
 }
 h1 {
   color: #72c9a9;
-  font-size: 3.1rem;
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.25rem;
 }
 
 #socials-container {
@@ -301,9 +292,10 @@ h1 {
 
 .section_picture-container_about {
   display: flex;
-  height: 350px;
-  width: 350px;
-  margin: auto 0;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto 4rem;
+  padding-top: 4rem;
 }
 .titel__h2 {
   color: black;
@@ -329,10 +321,6 @@ h1 {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
-
 .arrow {
   position: absolute;
   right: -5rem;
@@ -351,14 +339,8 @@ h1 {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
 /* EXPERIENCE SECTION */
 
 #experience {
